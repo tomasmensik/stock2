@@ -1,0 +1,332 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.1.1/dist/chart.min.js"></script>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+    crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container text-center modra">
+            <div class="fullPie">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="row">
+                            <div class="col-lg-1"></div>
+                            <div class="col-lg-10 mt-5 mb-5">
+                                <h1>Beatování marketu</h1>
+                            </div>
+                            <div class="col-lg-10"></div>
+                          </div>
+                          <div class="row zelena">
+                            <div class="chart-wrapper col-lg-12">
+                                <canvas class="cervena" id="myChart2"></canvas>
+                            </div>
+                          </div>
+                    </div>
+                      <div class="col-lg-6">
+                        <div class="info marginOkay">
+                            <div class="row">
+                                <div class="col-lg-2"></div>
+                                <div class="col-lg-8 mt-5 mb-5">
+                                    <h1>Stocks</h1>
+                                </div>
+                                <div class="col-lg-2"></div>
+                              </div>
+                              <div class="scrollbar">
+                                <div class="row">
+                                    <div class="col-lg-3"></div>
+                                    <div class="col-lg-6 infoTechnology2">
+                                        <hr>
+                                        <h3>Technology</h3>
+                                        <div class="infoData text-center mt-5"></div>
+                                        <hr>
+                                    </div>
+                                    <div class="col-lg-3"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-3"></div>
+                                    <div class="col-lg-6 infoFinancials2">
+                                        <hr>
+                                        <h3>Financials</h3>
+                                        <div class="infoData text-center mt-5"></div>
+                                        <hr>
+                                    </div>
+                                    <div class="col-lg-3"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-3"></div>
+                                    <div class="col-lg-6 infoConsumer2">
+                                        <hr>
+                                        <h3>Consumer Discretionary</h3>
+                                        <div class="infoData text-center mt-5"></div>
+                                        <hr>
+                                    </div>
+                                    <div class="col-lg-3"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-3"></div>
+                                    <div class="col-lg-6 infoIndustrial2">
+                                        <hr>
+                                        <h3>Industrial</h3>
+                                        <div class="infoData text-center mt-5"></div>
+                                        <hr>
+                                    </div>
+                                    <div class="col-lg-3"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-3"></div>
+                                    <div class="col-lg-6 infoHealth2">
+                                        <hr>
+                                        <h3>Health Care</h3>
+                                        <div class="infoData text-center mt-5"></div>
+                                        <hr>
+                                    </div>
+                                    <div class="col-lg-3"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-3"></div>
+                                    <div class="col-lg-6 infoStaples2">
+                                        <hr>
+                                        <h3>Consumer Staples</h3>
+                                        <div class="infoData text-center mt-5"></div>
+                                        <hr>
+                                    </div>
+                                    <div class="col-lg-3"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-3"></div>
+                                    <div class="col-lg-6 infoTele2">
+                                        <hr>
+                                        <h3>Telecommunications</h3>
+                                        <div class="infoData text-center mt-5"></div>
+                                        <hr>
+                                    </div>
+                                    <div class="col-lg-3"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-3"></div>
+                                    <div class="col-lg-6 infoEnergy2">
+                                        <hr>
+                                        <h3>Energy</h3>
+                                        <div class="infoData text-center mt-5"></div>
+                                        <hr>
+                                    </div>
+                                    <div class="col-lg-3"></div>
+                                </div>
+                              </div>
+                          </div>
+                      </div>
+                </div>
+            </div>
+<hr>
+            <div class="fullPie">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="row">
+                            <div class="col-lg-2"></div>
+                            <div class="col-lg-8 mt-5 mb-5">
+                                <h1>Calculated Risks</h1>
+                            </div>
+                            <div class="col-lg-2"></div>
+                          </div>
+                          <div class="row zelena">
+                            <div class="chart-wrapper col-lg-12">
+                                <canvas class="cervena" id="myChart3"></canvas>
+                            </div>
+                          </div>
+                    </div>
+                      <div class="col-lg-6">
+                        <div class="info marginOkay">
+                            <div class="row">
+                                <div class="col-lg-2"></div>
+                                <div class="col-lg-8 mt-5 mb-5">
+                                    <h1>Stocks</h1>
+                                </div>
+                                <div class="col-lg-2"></div>
+                              </div>
+                              <div class="scrollbar">
+                                <div class="row">
+                                    <div class="col-lg-3"></div>
+                                    <div class="col-lg-6 infoTechnology3">
+                                        <hr>
+                                        <h3>Technology</h3>
+                                        <div class="infoData text-center mt-5"></div>
+                                        <hr>
+                                    </div>
+                                    <div class="col-lg-3"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-3"></div>
+                                    <div class="col-lg-6 infoConsumer3">
+                                        <hr>
+                                        <h3>Consumer Discretionary</h3>
+                                        <div class="infoData text-center mt-5"></div>
+                                        <hr>
+                                    </div>
+                                    <div class="col-lg-3"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-3"></div>
+                                    <div class="col-lg-6 infoHealth3">
+                                        <hr>
+                                        <h3>Health Care</h3>
+                                        <div class="infoData text-center mt-5"></div>
+                                        <hr>
+                                    </div>
+                                    <div class="col-lg-3"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-3"></div>
+                                    <div class="col-lg-6 infoEnergy3">
+                                        <hr>
+                                        <h3>Energy</h3>
+                                        <div class="infoData text-center mt-5"></div>
+                                        <hr>
+                                    </div>
+                                    <div class="col-lg-3"></div>
+                                </div>
+                              </div>
+                          </div>
+                      </div>
+                </div>
+            </div>
+<hr>
+            <div class="fullPie">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="row">
+                            <div class="col-lg-1"></div>
+                            <div class="col-lg-10 mt-5 mb-5">
+                                <h1>High risk - High reward</h1>
+                            </div>
+                            <div class="col-lg-1"></div>
+                          </div>
+                          <div class="row zelena">
+                            <div class="chart-wrapper col-lg-12">
+                                <canvas class="cervena" id="myChart4"></canvas>
+                            </div>
+                          </div>
+                    </div>
+                      <div class="col-lg-6">
+                        <div class="info marginOkay">
+                            <div class="row">
+                                <div class="col-lg-2"></div>
+                                <div class="col-lg-8 mt-5 mb-5">
+                                    <h1>Stocks</h1>
+                                </div>
+                                <div class="col-lg-2"></div>
+                              </div>
+                              <div class="scrollbar">
+                                <div class="row">
+                                    <div class="col-lg-3"></div>
+                                    <div class="col-lg-6 infoTechnology4">
+                                        <hr>
+                                        <h3>Technology</h3>
+                                        <div class="infoData text-center mt-5"></div>
+                                        <hr>
+                                    </div>
+                                    <div class="col-lg-3"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-3"></div>
+                                    <div class="col-lg-6 infoHealth4">
+                                        <hr>
+                                        <h3>Health Care</h3>
+                                        <div class="infoData text-center mt-5"></div>
+                                        <hr>
+                                    </div>
+                                    <div class="col-lg-3"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-3"></div>
+                                    <div class="col-lg-6 infoConsumer4">
+                                        <hr>
+                                        <h3>Consumer Discretionary</h3>
+                                        <div class="infoData text-center mt-5"></div>
+                                        <hr>
+                                    </div>
+                                    <div class="col-lg-3"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-3"></div>
+                                    <div class="col-lg-6 infoStaples4">
+                                        <hr>
+                                        <h3>Consumer Staples</h3>
+                                        <div class="infoData text-center mt-5"></div>
+                                        <hr>
+                                    </div>
+                                    <div class="col-lg-3"></div>
+                                </div>
+                              </div>
+                          </div>
+                      </div>
+                </div>
+            </div>
+<hr>       
+            <div class="fullPie">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="row">
+                            <div class="col-lg-3"></div>
+                            <div class="col-lg-6 mt-5 mb-5">
+                                <h1>100% Safe</h1>
+                            </div>
+                            <div class="col-lg-3"></div>
+                          </div>
+                          <div class="row zelena">
+                            <div class="chart-wrapper col-lg-12">
+                                <canvas class="cervena" id="myChart"></canvas>
+                            </div>
+                          </div>
+                    </div>
+                      <div class="col-lg-6">
+                        <div class="info marginOkay">
+                            <div class="row">
+                                <div class="col-lg-2"></div>
+                                <div class="col-lg-8 mt-5 mb-5">
+                                    <h1>Stocks</h1>
+                                </div>
+                                <div class="col-lg-2"></div>
+                              </div>
+                              <div class="scrollbar">
+                                <div class="row">
+                                    <div class="col-lg-3"></div>
+                                    <div class="col-lg-6">
+                                    </div>
+                                    <div class="col-lg-3"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-3"></div>
+                                    <div class="col-lg-6">
+                                    </div>
+                                    <div class="col-lg-3"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-3"></div>
+                                    <div class="col-lg-6">
+                                    </div>
+                                    <div class="col-lg-3"></div>
+                                </div>
+                              </div>
+                          </div>
+                      </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    
+    
+</body>
+
+<script src="./js/app.js"></script>
+<script src="./js/info.js"></script>
+</html>

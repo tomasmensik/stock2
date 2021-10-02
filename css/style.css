@@ -1,0 +1,31 @@
+
+body {
+    margin: 0;
+  }
+  
+  .chart-wrapper {
+    margin: 0 auto;
+  }
+
+  .dataName{
+    font-weight: 600;
+  }
+
+  .scrollbar{
+    height: 700px;
+    overflow: scroll;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  }
+
+/*   .cervena{
+    border: 1px solid red;
+  }
+
+  .zelena{
+    border: 1px solid green;
+  }
+
+  .modra{
+    border: 1px solid blue;
+  } */
